@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="dynamic-shadow">Texto com Sombra Dinâmica</h1>
+
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            const shadowElement = document.getElementById('dynamic-shadow');
+            const { offsetX, offsetY } = e;
+            const { offsetWidth: width, offsetHeight: height } = shadowElement;
+            const moveX = (offsetX / width * 10) - 5;
+            const moveY = (offsetY / height * 10) - 5;
+            shadowElement.style.textShadow = `${moveX}px ${moveY}px 5px rgba(0, 0, 0, 0.5)`;
+        });
+    </script>
+</body>
+</html>

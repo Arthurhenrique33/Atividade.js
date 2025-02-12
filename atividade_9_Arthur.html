@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeMood('happy')">Estou feliz</button>
+    <button onclick="changeMood('sad')">Estou triste</button>
+
+    <script>
+    function changeMood(mood) {
+        if (mood === 'happy') {
+            document.body.style.backgroundColor = 'yellow';
+            document.body.innerHTML += '<p>Você está feliz!</p>';
+        } else if (mood === 'sad') {
+            document.body.style.backgroundColor = 'blue';
+            document.body.innerHTML += '<p>Você está triste!</p>';
+        }
+    }
+    </script>
+</body>
+</html>

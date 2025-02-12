@@ -1,0 +1,20 @@
+!DOCTYPE html>
+<html lang="pt-br
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar cor de fundo</title>
+</head>
+
+<body>
+    <button onclick="changeBackgroundColor()">button>Mudar cor</button>
+
+    <script>
+        function changeBackgroundColor() {
+            documen.body.style.backgroundColor = 'black';
+        }
+    </script>
+</body>
+
+</html>

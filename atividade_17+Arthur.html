@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="increaseBrightness()">aumentar o brilho
+
+    <script>
+        let brightness = 100;
+
+        function increaseBrightness() {
+            if (brightness < 200) {
+                brightness += 10;
+                document.body.style.filter = `brightness(${brightness}%)`;
+            }
+        }
+    </script>
+</body>
+</html>
