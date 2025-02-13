@@ -1,0 +1,55 @@
+-- MySQL
+-- Criando um índice simples para uma coluna
+CREATE INDEX idx_nome_coluna
+ON tabela (nome_coluna);
+
+-- Criando um índice composto com duas colunas
+CREATE INDEX idx_nome_email
+ON usuarios (nome, email);
+
+-- Criando um índice único (garante que não haverá valores duplicados)
+CREATE UNIQUE INDEX idx_email_unico
+ON usuarios (email);
+
+
+-- PostgreSQL
+-- Criando um índice simples para uma coluna
+CREATE INDEX idx_nome_coluna
+ON tabela (nome_coluna);
+
+-- Criando um índice composto com duas colunas
+CREATE INDEX idx_nome_email
+ON usuarios (nome, email);
+
+-- Criando um índice único (garante que não haverá valores duplicados)
+CREATE UNIQUE INDEX idx_email_unico
+ON usuarios (email);
+
+
+-- SQL Server
+-- Criando um índice simples para uma coluna
+CREATE INDEX idx_nome_coluna
+ON tabela (nome_coluna);
+
+-- Criando um índice composto com duas colunas
+CREATE INDEX idx_nome_email
+ON usuarios (nome, email);
+
+-- Criando um índice único (garante que não haverá valores duplicados)
+CREATE UNIQUE INDEX idx_email_unico
+ON usuarios (email);
+
+
+-- Oracle
+-- Criando um índice simples para uma coluna
+CREATE INDEX idx_nome_coluna
+ON tabela (nome_coluna);
+
+-- Criando um índice composto com duas colunas
+CREATE INDEX idx_nome_email
+ON usuarios (nome, email);
+
+-- Criando um índice único (garante que não haverá valores duplicados)
+CREATE UNIQUE INDEX idx_email_unico
+ON usuarios (email);
+
