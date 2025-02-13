@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="dataForm"></form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <button type="button" onclick="displayData()">Enviar</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+    function displayData() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        document.getElementById('result').innerHTML = 
+            '<p>Nome: ' + name + '</p>' + 
+            '<p>Email: ' + email + '</p>';
+    }
+    </script>
+</body>
+</html>
