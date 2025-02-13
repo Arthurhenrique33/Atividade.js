@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form id="myForm">
+    <label for="inputField">Campo:</label>
+    <input type="text" id="inputField">
+    <button type="button" onclick="validateForm()">Enviar</button>
+</form>
+
+<script>
+function validateForm() {
+    var inputField = document.getElementById('inputField');
+    if (inputField.value.trim() === "") {
+        inputField.style.backgroundColor = 'red';
+    } else {
+        inputField.style.backgroundColor = '';
+    }
+}
+</script>
+</body>
+</html>
